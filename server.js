@@ -16,15 +16,14 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 //Connect to MongoDB
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-  }
-);
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebook";
+mongoose
+    .connect(MONGODB_URI, { useNewUrlParser: true }, (err) => {
+        if (err) throw err;
+        console.log("database connected")
+    })
+    .then(() => console.log("Database Connected!"))
+    .catch(err => console.log(err));
 
 // Define API routes here
 //search route
