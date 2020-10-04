@@ -16,8 +16,6 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 //Connect to MongoDB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks";
-
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/googlebooks',
   {
