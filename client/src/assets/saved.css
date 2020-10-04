@@ -1,0 +1,22 @@
+.savedHeader {
+    background: url("./savedbooks.jpg") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: right;
+    height: 100vh;
+    color:  rgb(73, 72, 16);
+    text-shadow: 1px 1px black;
+    padding-top: 25vh;
+}
+.savedHeader h1{
+    font-size: 90px;
+    font-family: 'Oleo Script', cursive;
+    background-color: rgb(160, 151, 26);
+}
+.savedHeader h2 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(235, 236, 221);
+}

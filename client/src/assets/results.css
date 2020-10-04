@@ -1,0 +1,41 @@
+body {
+overflow-x: hidden;
+height: 100%;
+}
+.results {
+    padding-top: 20px;
+    background:  rgb(73, 72, 16);
+    height: 100%;
+}
+.result-box{
+    background: #f0e07d
+}
+p {
+    float: left;
+    text-align: left;
+}
+.title, .authors {
+    margin-left: 10px;
+}
+.buttonDiv {
+    margin-right: 20px;
+    float: right;
+}
+.title {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.results h1 {
+    color: white;
+}
+.view {
+    background: rgb(100, 128, 0);
+    color: white;
+    margin-right: 10px;
+}
+.save {
+    color: white;
+}
+.description{
+    margin-right: 20px
+}
