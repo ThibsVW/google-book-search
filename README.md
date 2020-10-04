@@ -32,4 +32,6 @@ npm start
 
 Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
+## Starting the app locally
 
+[Heroku deployment](https://secure-spire-88963.herokuapp.com/)
